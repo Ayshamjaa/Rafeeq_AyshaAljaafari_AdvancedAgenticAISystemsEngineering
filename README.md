@@ -1,19 +1,8 @@
-<div align="center">
-
 # Rafeeq Mini — رفيق المصغّر
-### Bilingual Agentic AI Delivery-Support Agent · وكيل توكيلي ثنائي اللغة لدعم عمليات التوصيل
 
-**Advanced Agentic AI Systems Engineering — SDAIA Academy**
-**Course Trainer · المدربة: Meaad Al-Marri · ميعاد المري**
+### Bilingual Agentic AI Delivery-Support Agent · وكيل ذكاء اصطناعي توكيلي ثنائي اللغة لدعم عمليات التوصيل
 
-[![Course](https://img.shields.io/badge/Course-Advanced%20Agentic%20AI%20Systems%20Engineering-006d77)](https://github.com/almiyead-rgb/rafeeq-agentic-ai-labs)
-[![Runtime](https://img.shields.io/badge/Runtime-Google%20Colab%20Free%20CPU-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/)
-[![LLM Mode](https://img.shields.io/badge/LLM__MODE-stub-success)](https://github.com/almiyead-rgb/rafeeq-agentic-ai-labs)
-[![API Key](https://img.shields.io/badge/API%20Key-Not%20Required-informational)](https://github.com/almiyead-rgb/rafeeq-agentic-ai-labs)
-[![Data](https://img.shields.io/badge/Data-Synthetic%20Only-blueviolet)](https://github.com/almiyead-rgb/rafeeq-agentic-ai-labs)
-[![Languages](https://img.shields.io/badge/Languages-AR%20%2B%20EN-102a43)](https://github.com/almiyead-rgb/rafeeq-agentic-ai-labs)
-
-</div>
+**Advanced Agentic AI Systems Engineering — SDAIA Academy** · دورة هندسة أنظمة الذكاء الاصطناعي التوكيلي المتقدمة — أكاديمية سدايا
 
 ---
 
@@ -42,7 +31,7 @@
 
 ## 🗓️ Three-Day Cumulative Build · البناء التراكمي خلال ثلاثة أيام
 
-The project is built progressively through **30 cells (C0–C29)** and **14 guided learner exercises (TODO-1 … TODO-14)** in a single Google Colab notebook. · يُبنى المشروع تدريجيًا عبر **30 خلية (C0–C29)** و**14 تمرينًا موجهًا** في دفتر كولاب واحد.
+The project is built progressively through **30 cells (C0–C29)** and **14 guided learner exercises (TODO-1 … TODO-14)** in a single Google Colab notebook. · يُبنى المشروع تدريجيًا عبر **30 خلية (C0–C29)** و **14 تمرينًا موجهًا** في دفتر كولاب واحد.
 
 | Day · اليوم | Cells · الخلايا | Build outcome · ناتج البناء | Gate · البوابة |
 |---|---|---|---|
@@ -71,7 +60,7 @@ All critical gates and learner checks passed on Colab Free CPU with `LLM_MODE=st
 | Public tests · الاختبارات العامة | ✅ Pass |
 | Learner exercises TODO-11 → TODO-14 · تمارين المتدرب | ✅ All True |
 
-📄 Full machine-readable evidence: [`reports/assessment_results.json`](reports/assessment_results.json) · Human-readable reports: [`reports/PROJECT_REPORT.md`](reports/PROJECT_REPORT.md) and [`reports/SECURITY_ASSESSMENT.md`](reports/SECURITY_ASSESSMENT.md)
+📄 Machine-readable evidence: `reports/assessment_results.json` · Human-readable reports: `reports/PROJECT_REPORT.md` and `reports/SECURITY_ASSESSMENT.md`
 
 ---
 
@@ -79,14 +68,14 @@ All critical gates and learner checks passed on Colab Free CPU with `LLM_MODE=st
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  User Request (AR / EN) · طلب المستخدم                      │
-│  "refund order ORD-1001" / "أريد استرداد الطلب"              │
+│  User Request (AR / EN) · طلب المستخدم                       │
+│  "refund order ORD-1001" / "أريد استرداد الطلب"               │
 └──────────────────────────┬──────────────────────────────────┘
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  Supervisor Agent · وكيل المنسق                              │
-│  Bounded graph · typed state · step/transition limits       │
-└───────┬───────────────────────┬───────────────────────┬─────┘
+│  Supervisor Agent · وكيل المنسق                               │
+│  Bounded graph · typed state · step/transition limits         │
+└───────┬───────────────────────┬───────────────────────┬───────┘
         ▼                       ▼                       ▼
 ┌───────────────┐      ┌──────────────────┐      ┌──────────────────┐
 │ Order Lookup  │      │ Policy Retrieval │      │ Refund Writer    │
@@ -102,8 +91,9 @@ All critical gates and learner checks passed on Colab Free CPU with `LLM_MODE=st
 ```
 
 **Design principles · مبادئ التصميم:**
+
 - **Bounded runtime** — hard limits on steps, transitions, handoffs, and reflections guarantee termination. · حدود صارمة على الخطوات والانتقالات والتفويضات والمراجعات تضمن الإنهاء.
-- **Typed, scoped state** — customer identity and approvals live *outside* model-controlled arguments. · هوية العميل والموافقات خارج وسائط النموذج المسيطر عليها.
+- **Typed, scoped state** — customer identity and approvals live *outside* model-controlled arguments. · هوية العميل والموافقات خارج وسائط النموذج.
 - **Deterministic stub LLM** — `LLM_MODE=stub` keeps every run reproducible with no API key and no network. · نموذج Stub حتمي يجعل كل تشغيل قابلًا لإعادة الإنتاج دون مفتاح API أو شبكة.
 - **Observable traces** — every decision logs decision, tool, route, result, and counters (no private chain-of-thought). · أثر مرصود لكل قرار دون تخزين التفكير الداخلي.
 - **Secure by default** — redacted traces, zero cross-customer leakage, zero unauthorized writes. · آمن افتراضيًا بأثر منقح وصفر تسرب وصفر كتابات غير مصرح بها.
@@ -129,7 +119,7 @@ Rafeeq_AyshaAljaafari_AdvancedAgenticAISystemsEngineering/
 ├── README.md                         # This file · هذا الملف
 ├── notebooks/
 │   └── Rafeeq_Mini_Capstone.ipynb    # Final notebook, cells C0–C29 · الدفتر النهائي
-├── data/                             # Synthetic public data (orders, policies,…) · بيانات مصطنعة
+├── data/                             # Synthetic public data · بيانات مصطنعة عامة
 ├── src/                              # Agent core modules · وحدات نواة الوكيل
 ├── mcp_server/                       # Local MCP server/client · خادم/عميل MCP
 ├── tests/                            # Public checks · الفحوص العامة
@@ -148,7 +138,7 @@ Rafeeq_AyshaAljaafari_AdvancedAgenticAISystemsEngineering/
 
 ## ▶️ How to Run · طريقة التشغيل
 
-1. Open [`notebooks/Rafeeq_Mini_Capstone.ipynb`](notebooks/Rafeeq_Mini_Capstone.ipynb) in **Google Colab** (standard CPU runtime; no GPU needed). · افتح الدفتر في كولاب ببيئة CPU القياسية.
+1. Open `notebooks/Rafeeq_Mini_Capstone.ipynb` in **Google Colab** (standard CPU runtime; no GPU needed). · افتح الدفتر في كولاب ببيئة CPU القياسية.
 2. Run all cells **from top to bottom** (`C0 → C29`); do not skip dependencies. · شغّل الخلايا من الأعلى إلى الأسفل دون تخطي الاعتماديات.
 3. Complete only the numbered learner exercises (`TODO-1 … TODO-14`) when prompted. · أكمل تمارين المتدرب المرقمة فقط.
 4. Day gates: `C9_DAY1_GATE` and `C20_DAY2_GATE` must print `all_passed=true`. · يجب أن تطبع بوابتا اليومين الأول والثاني `all_passed=true`.
@@ -158,9 +148,24 @@ Rafeeq_AyshaAljaafari_AdvancedAgenticAISystemsEngineering/
 
 ---
 
+## 📚 Technical Documentation · التوثيق الفني
+
+| Document · الوثيقة | Location · الموقع | Content · المحتوى |
+|---|---|---|
+| Project report · تقرير المشروع | [`reports/PROJECT_REPORT.md`](reports/PROJECT_REPORT.md) | Architecture, gates, measured optimization, readiness · المعمارية والبوابات والتحسين المقاس والجاهزية |
+| Security assessment · التقييم الأمني | [`reports/SECURITY_ASSESSMENT.md`](reports/SECURITY_ASSESSMENT.md) | Threat model, attack suite, guard fix and retest · نموذج التهديد وحزمة الهجوم وإصلاح الحارس وإعادة الفحص |
+| Learning progress · سجل التقدم | [`LEARNING_PROGRESS.md`](LEARNING_PROGRESS.md) | Safe public checkpoints: setup, Day 1, Day 2, Day 3 · نقاط التقدم العامة الآمنة |
+| Notebook docs · توثيق الدفتر | [`notebooks/`](notebooks/) | Final capstone notebook C0–C29 · دفتر التسليم النهائي |
+| Agent core · نواة الوكيل | [`src/`](src/) | Typed state, bounded graph, agents · الحالة المحددة والمخطط المحدود والوكلاء |
+| MCP integration · تكامل MCP | [`mcp_server/`](mcp_server/) | Local MCP server/client · خادم/عميل MCP المحلي |
+| Public checks · الفحوص العامة | [`tests/`](tests/) | Validated public test suite · الاختبارات العامة المتحقق منها |
+| Learner guide · دليل المتدرب | [almiyead-rgb/rafeeq-agentic-ai-labs](https://github.com/almiyead-rgb/rafeeq-agentic-ai-labs) | Official course guide used for this build · دليل الدورة الرسمي المتبع في البناء |
+
+---
+
 ## 📊 Evidence & Reports · الأدلة والتقارير
 
-Every important claim in this project maps to a cell, a public synthetic case, and its result:
+Every important claim maps to a cell, a public synthetic case, and its result:
 
 | Artifact · الملف | Produced by · توليده | Content · المحتوى |
 |---|---|---|
@@ -175,7 +180,7 @@ Every important claim in this project maps to a cell, a public synthetic case, a
 
 ## 🛡️ Privacy, Identity & Academic Integrity · الخصوصية والهوية والنزاهة الأكاديمية
 
-- Only the **synthetic** `learner_id` / GitHub username appears in public files; real identity is submitted exclusively through the instructor's private hand-in form. · لا يظهر في الملفات العامة سوى المعرف الاصطناعي أو اسم مستخدم GitHub، وتُرسل الهوية الحقيقية عبر نموذج التسليم الخاص فقط.
+- Only the synthetic `learner_id` / GitHub username appears in public files; real identity is submitted exclusively through the instructor's private hand-in form. · لا يظهر في الملفات العامة سوى المعرف الاصطناعي أو اسم مستخدم GitHub، وتُرسل الهوية الحقيقية عبر نموذج التسليم الخاص فقط.
 - No credentials, tokens, API keys, private links, real customer data, or private chain-of-thought are published. · لا تُنشر بيانات دخول أو مفاتيح أو روابط خاصة أو بيانات عملاء حقيقية أو تفكير داخلي.
 - Only learner `TODO` areas were completed; official source cells, public tests, and validators were not modified. · أكملت مناطق المتدرب فقط دون تعديل المصدر الرسمي أو الاختبارات العامة.
 - Course materials are reused under the limited `COURSE_USE_PERMISSION.md`. · إعادة استخدام مواد الدورة خاضعة لإذن الاستخدام المحدود.
@@ -184,25 +189,35 @@ Every important claim in this project maps to a cell, a public synthetic case, a
 
 ## 🙏 Acknowledgments · الشكر والتقدير
 
-- **SDAIA Academy** — Advanced Agentic AI Systems Engineering course · دورة هندسة أنظمة الذكاء الاصطناعي التوكيلي المتقدمة في أكاديمية سدايا: https://sdaia.gov.sa
-- **Instructor:** Meaad Al-Marri · المدربة: ميعاد المري
-- **Official course repository:** [almiyead-rgb/rafeeq-agentic-ai-labs](https://github.com/almiyead-rgb/rafeeq-agentic-ai-labs) (the starting notebook and learner guide live there — this repo is a standalone learner submission, not a fork) · مستودع الدورة الرسمي هو نقطة البداية، وهذا المستودع تسليم مستقل للمتدربة وليس Fork.
-- **Notebook working copy:** [Google Colab](https://colab.research.google.com/drive/1V5DpL1oSj0wohuz1yjXj-qRkDF5SgXoq)
+- **SDAIA Academy · أكاديمية سدايا:** [github.com/SDAIAAcademy](https://github.com/SDAIAAcademy) — the official SDAIA Academy GitHub organization for the training program. · المنظمة الرسمية لأكاديمية سدايا على GitHub لبرامجها التدريبية: https://github.com/SDAIAAcademy
+- **Training program · البرنامج التدريبي:** Advanced Agentic AI Systems Engineering course · دورة هندسة أنظمة الذكاء الاصطناعي التوكيلي المتقدمة — [sdaia.gov.sa](https://sdaia.gov.sa)
+- **Course Trainer · المدربة:** Meaad Al-Marri · ميعاد المري
+- **Official course repository · مستودع الدورة الرسمي:** [almiyead-rgb/rafeeq-agentic-ai-labs](https://github.com/almiyead-rgb/rafeeq-agentic-ai-labs) — the starting notebook and learner guide live there; this repository is a standalone learner submission, not a fork. · مستودع الدورة الرسمي هو نقطة البداية، وهذا المستودع تسليم مستقل للمتدربة وليس Fork.
+- **Working notebook copy · نسخة الدفتر العاملة:** Google Colab
 
 ---
 
 ## 📬 Hand-in · التسليم
 
-- Final commit: recorded via the instructor's private hand-in form (repository URL + final commit SHA + the three gate markers). · Commit النهائي مسجل في نموذج التسليم الخاص مع رابط المستودع وعلامات البوابات الثلاث.
+- Final commit recorded via the instructor's private hand-in form (repository URL + final commit SHA + the three gate markers). · Commit النهائي مسجل في نموذج التسليم الخاص مع رابط المستودع وعلامات البوابات الثلاث.
 - Automated validation: **Actions → Learner submission quality** is green for the final commit. · التحقق الآلي عبر Actions ناجح لنفس Commit التسليم.
 - This is an educational training project — not a production deployment. · مشروع تدريبي تعليمي وليس نشرًا إنتاجيًا.
 
 ---
 
-<div align="center">
+**Built with a bounded, observable, and safe-by-default agentic architecture.** · **بُني بمعمارية وكيلية محدودة ومرصودة وآمنة افتراضيًا.**
 
-**Built with a bounded, observable, and safe-by-default agentic architecture.**
-**بُني بمعمارية وكيلية محدودة ومرصودة وآمنة افتراضيًا.**
+---
 
-</div>
+## ✅ SDAIA Administrative Requirements — 10 Points · متطلبات سدايا الإدارية — 10 درجات
+
+| Required evidence · الدليل المطلوب | Where it is satisfied · موقع تحقيقه في هذا المستودع |
+|---|---|
+| Clear, comprehensive GitHub repository description (2 pts) · وصف واضح وشامل لمستودع GitHub | Repository **About** description + this README · وصف About + هذا الملف |
+| Professional README: idea, run, and use (2 pts) · README احترافي: الفكرة والتشغيل والاستخدام | [Overview](#-overview--نظرة-عامة) · [How to Run](#️-how-to-run--طريقة-التشغيل) · [Architecture](#-architecture--المعمارية) |
+| Appropriate linked technical documentation (2 pts) · توثيق فني مناسب ومترابط | [Technical Documentation](#-technical-documentation--التوثيق-الفني) with linked reports, source, tests, and learner guide · جدول التوثيق الفني المترابط |
+| Safe, meaningful Git progress and version history (2 pts) · تقدم Git آمن وذو معنى وسجل إصدارات محفوظ | [`LEARNING_PROGRESS.md`](LEARNING_PROGRESS.md) + documented commit messages (`docs:`, `feat:`) · سجل التقدم الآمن ورسائل Commits موثقة |
+| Training-program reference in README (1 pt) · الإشارة إلى البرنامج التدريبي في README | [Acknowledgments](#-acknowledgments--الشكر-والتقدير): SDAIA Academy + course name · قسم الشكر والتقدير |
+| Working SDAIA Academy GitHub link (1 pt) · رابط أكاديمية سدايا الصحيح | [github.com/SDAIAAcademy](https://github.com/SDAIAAcademy) in Acknowledgments · الرابط في قسم الشكر |
+
 
