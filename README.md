@@ -138,7 +138,7 @@ Rafeeq_AyshaAljaafari_AdvancedAgenticAISystemsEngineering/
 
 ## ▶️ How to Run · طريقة التشغيل
 
-1. Open `notebooks/Rafeeq_Mini_Capstone.ipynb` in **Google Colab** (standard CPU runtime; no GPU needed). · افتح الدفتر في كولاب ببيئة CPU القياسية.
+1. Open `[notebooks/Rafeeq_Mini_Capstone.ipynb](https://colab.research.google.com/github/almiyead-rgb/rafeeq-agentic-ai-labs/blob/v0.9.0-rc3/notebooks/Rafeeq_Mini_Capstone.ipynb)` in **Google Colab** (standard CPU runtime; no GPU needed). · افتح الدفتر في كولاب ببيئة CPU القياسية.
 2. Run all cells **from top to bottom** (`C0 → C29`); do not skip dependencies. · شغّل الخلايا من الأعلى إلى الأسفل دون تخطي الاعتماديات.
 3. Complete only the numbered learner exercises (`TODO-1 … TODO-14`) when prompted. · أكمل تمارين المتدرب المرقمة فقط.
 4. Day gates: `C9_DAY1_GATE` and `C20_DAY2_GATE` must print `all_passed=true`. · يجب أن تطبع بوابتا اليومين الأول والثاني `all_passed=true`.
