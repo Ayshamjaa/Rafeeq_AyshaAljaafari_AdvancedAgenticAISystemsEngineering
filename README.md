@@ -135,19 +135,16 @@ Rafeeq_AyshaAljaafari_AdvancedAgenticAISystemsEngineering/
 ```
 
 ---
-
 ## ▶️ How to Run & Verify · طريقة التشغيل والتحقق
-
-[![Open In Colab](https://colab.research.google.com/drive/1J-WmARJ6pri2IMEuaiM6xiv4ZiBv2XLu?usp=sharing)]
 
 This notebook is **fully completed** (all exercises `TODO-1` through `TODO-14` implemented and evaluated). You can execute and review the working pipeline directly in Google Colab:
 هذا الدفتر **مكتمل بالكامل** (تم تنفيذ وتقييم جميع التمارين `TODO-1` إلى `TODO-14`). يمكنك تشغيل ومراجعة خط العمل مباشرة في قوقل كولاب:
 
-1. Open the notebook in **Google Colab**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](ضع_رابط_كولاب_الخاص_بك_هنا) (standard CPU runtime; no GPU needed). · افتح الدفتر المكتمل في كولاب ببيئة CPU القياسية.
+1. Open the notebook directly in [Google Colab Notebook](https://colab.research.google.com/drive/1J-WmARJ6pri2IMEuaiM6xiv4ZiBv2XLu?usp=sharing) (standard CPU runtime; no GPU needed). · افتح الدفتر المكتمل في [قوقل كولاب](https://colab.research.google.com/drive/1J-WmARJ6pri2IMEuaiM6xiv4ZiBv2XLu?usp=sharing) ببيئة CPU القياسية.
 2. Run all cells **from top to bottom** (`C0 → C29`) to reproduce the complete pipeline and evaluation. · شغّل جميع الخلايا بالتتابع لتكرار عملية التشغيل والتقييم الكاملة.
 3. Verification gates (`C9_DAY1_GATE`, `C20_DAY2_GATE`, and `C29_EXPORT_SAFETY_CHECK`) will print `all_passed=true` and `FINAL_EXPORT_CREATED`. · ستطبع بوابات التحقق الشاملة نجاح جميع الفحوصات والتصدير النهائي بنجاح.
 
-> ℹ️ **Note:** All dependencies and synthetic data are pre-configured within the notebook for direct execution. · جميع الاعتماديات والبيانات المصطنشة مجهزة ومُعدة مسبقاً داخل الدفتر للتشغيل المباشر.
+> ℹ️ **Note:** All dependencies and synthetic data are pre-configured within the notebook for direct execution. · جميع الاعتماديات والبيانات المصطنعة مجهزة ومُعدة مسبقاً داخل الدفتر للتشغيل المباشر.
 
 ---
 
