@@ -136,15 +136,18 @@ Rafeeq_AyshaAljaafari_AdvancedAgenticAISystemsEngineering/
 
 ---
 
-## ▶️ How to Run · طريقة التشغيل
+## ▶️ How to Run & Verify · طريقة التشغيل والتحقق
 
-1. Open `https://colab.research.google.com/github/almiyead-rgb/rafeeq-agentic-ai-labs/blob/v0.9.0-rc3/notebooks/Rafeeq_Mini_Capstone.ipynb` in **Google Colab** (standard CPU runtime; no GPU needed). · افتح الدفتر في كولاب ببيئة CPU القياسية.
-2. Run all cells **from top to bottom** (`C0 → C29`); do not skip dependencies. · شغّل الخلايا من الأعلى إلى الأسفل دون تخطي الاعتماديات.
-3. Complete only the numbered learner exercises (`TODO-1 … TODO-14`) when prompted. · أكمل تمارين المتدرب المرقمة فقط.
-4. Day gates: `C9_DAY1_GATE` and `C20_DAY2_GATE` must print `all_passed=true`. · يجب أن تطبع بوابتا اليومين الأول والثاني `all_passed=true`.
-5. Enable the `FINAL_EXPORT` switch and rerun `C29_EXPORT_SAFETY_CHECK` — it must print `FINAL_EXPORT_CREATED`. · فعّل مفتاح التصدير النهائي وأعد تشغيل C29 حتى يطبع `FINAL_EXPORT_CREATED`.
+[![Open In Colab](https://colab.research.google.com/drive/1J-WmARJ6pri2IMEuaiM6xiv4ZiBv2XLu?usp=sharing)]
 
-> 🔁 If the Colab runtime resets: reopen your Drive copy, run `C0_ENV_DOCTOR`, then rerun completed cells from the top. · إذا أُعيد ضبط بيئة كولاب: افتح النسخة المحفوظة وشغّل فاحص البيئة ثم أعد الخلايا من الأعلى.
+This notebook is **fully completed** (all exercises `TODO-1` through `TODO-14` implemented and evaluated). You can execute and review the working pipeline directly in Google Colab:
+هذا الدفتر **مكتمل بالكامل** (تم تنفيذ وتقييم جميع التمارين `TODO-1` إلى `TODO-14`). يمكنك تشغيل ومراجعة خط العمل مباشرة في قوقل كولاب:
+
+1. Open the notebook in **Google Colab**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](ضع_رابط_كولاب_الخاص_بك_هنا) (standard CPU runtime; no GPU needed). · افتح الدفتر المكتمل في كولاب ببيئة CPU القياسية.
+2. Run all cells **from top to bottom** (`C0 → C29`) to reproduce the complete pipeline and evaluation. · شغّل جميع الخلايا بالتتابع لتكرار عملية التشغيل والتقييم الكاملة.
+3. Verification gates (`C9_DAY1_GATE`, `C20_DAY2_GATE`, and `C29_EXPORT_SAFETY_CHECK`) will print `all_passed=true` and `FINAL_EXPORT_CREATED`. · ستطبع بوابات التحقق الشاملة نجاح جميع الفحوصات والتصدير النهائي بنجاح.
+
+> ℹ️ **Note:** All dependencies and synthetic data are pre-configured within the notebook for direct execution. · جميع الاعتماديات والبيانات المصطنشة مجهزة ومُعدة مسبقاً داخل الدفتر للتشغيل المباشر.
 
 ---
 
